@@ -1,0 +1,129 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.1'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+    id 'checkstyle'
+}
+
+group = 'com.redsource.distributed.system'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+checkstyle {
+    configFile file("config/checkstyle/checkstyle.xml")
+}
+checkstyleMain {
+    source = 'src/main/java'
+}
+checkstyleTest {
+    source = 'src/test/java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'org.springframework.kafka:spring-kafka'
+
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //LOMBOK
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    //TEST CONTAINERS
+    testImplementation 'org.testcontainers:mongodb:1.16.2'
+    testImplementation 'org.testcontainers:kafka:1.16.3'
+    testImplementation 'org.testcontainers:testcontainers:1.16.2'
+    testImplementation 'org.testcontainers:junit-jupiter:1.16.2'
+
+    //TESTING
+    testImplementation 'io.projectreactor:reactor-test'
+    testImplementation 'com.tyro.oss:log-testing:2.1'
+
+
+    //JUNIT5
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    testImplementation 'org.mockito:mockito-core'
+
+    //CUCUMBER
+    testImplementation 'io.cucumber:cucumber-core:6.10.2'
+    testImplementation 'io.cucumber:cucumber-java:6.10.2'
+    testImplementation 'io.cucumber:cucumber-junit:6.10.2'
+    testImplementation 'io.cucumber:cucumber-spring:6.10.2'
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.7.2'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+tasks.register('dockerPush') {
+    def gitHash = getCheckedOutGitCommitHash()
+    def tag = "$imageRepo/$rootProject.name:$appVersion-$gitHash"
+    def repo = imageRepo
+
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine('docker', 'build', '-t', tag, '.')
+    }
+    exec {
+        commandLine('aws', 'ecr', 'get-login-password',
+                '--region', 'ap-southeast-1'
+        )
+
+        standardOutput = stdout
+    }
+    exec {
+        commandLine('docker', 'login',
+                '--username', 'AWS',
+                '--password', stdout, repo
+        )
+    }
+    exec {
+        commandLine('docker', 'push', tag)
+    }
+
+    exec {
+        commandLine('docker', 'image', 'rm', '-f', tag)
+    }
+
+}
+
+tasks.register ('createECR') {
+    def repoName =rootProject.name
+    exec {
+        commandLine(
+                'aws','ecr','create-repository',
+                '--repository-name', repoName
+        )
+
+    }
+
+}
+def getCheckedOutGitCommitHash() {
+    def gitFolder = "$projectDir/.git/".replace("/$rootProject.name","")
+    def takeFromHash = 12
+    /*
+     * '.git/HEAD' contains either
+     *      in case of detached head: the currently checked out commit hash
+     *      otherwise: a reference to a file containing the current commit hash
+     */
+    def head = new File(gitFolder + "HEAD").text.split(":") // .git/HEAD
+    def isCommit = head.length == 1 // e5a7c79edabbf7dd39888442df081b1c9d8e88fd
+    // def isRef = head.length > 1     // ref: refs/heads/master
+
+    if (isCommit) return head[0].trim().take(takeFromHash) // e5a7c79edabb
+
+    def refHead = new File(gitFolder + head[1].trim()) // .git/refs/heads/master
+    refHead.text.trim().take takeFromHash
+}
