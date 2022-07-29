@@ -66,8 +66,25 @@ test {
     useJUnitPlatform()
 }
 
-
 tasks.register('dockerPush') {
+    def gitHash = getCheckedOutGitCommitHash()
+    def tag = "$imageRepo/$rootProject.name:$appVersion-$gitHash"
+    exec {
+        commandLine('docker', 'build', '-t', tag, '.')
+    }
+    exec {
+        commandLine('docker', 'login',
+                '--username', dockerHubUser,
+                '--password', dockerHubPassword
+        )
+    }
+    exec {
+        commandLine('docker', 'push', tag)
+    }
+}
+
+
+/*tasks.register('dockerPush') {
     def gitHash = getCheckedOutGitCommitHash()
     def tag = "$imageRepo/$rootProject.name:$appVersion-$gitHash"
     def repo = imageRepo
@@ -109,9 +126,9 @@ tasks.register ('createECR') {
 
     }
 
-}
+}*/
 def getCheckedOutGitCommitHash() {
-    def gitFolder = "$projectDir/.git/".replace("/$rootProject.name","")
+    def gitFolder = "$projectDir/.git/"
     def takeFromHash = 12
     /*
      * '.git/HEAD' contains either
