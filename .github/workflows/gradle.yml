@@ -29,9 +29,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Test
-      run: echo $DOCKER_USER
+      run: echo ${{secrets.DOCKER_USER}}
     - name: Test 2
-      run: echo DOCKER_PASSWORD
+      run: echo ${{secrets.DOCKER_PASSWORD}}
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.2.2
       with:
