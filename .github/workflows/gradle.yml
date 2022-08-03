@@ -29,10 +29,13 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Setup Env
-        env:
-          DOCKER_USER: ${{secrets.DOCKER_USER}}
-          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-          LAST_NAME: Octocat
+      env:
+        DOCKER_USER_ENV: ${{secrets.DOCKER_USER}}
+        DOCKER_PASSWORD_ENV: ${{secrets.DOCKER_PASSWORD}}
+    - name: Test
+      run: echo $DOCKER_USER
+    - name: Test 2
+      run: echo DOCKER_PASSWORD
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.2.2
       with:
@@ -40,4 +43,4 @@ jobs:
     - name: Push Docker Image
       uses: gradle/gradle-build-action@v2.2.2
       with:
-        arguments: dockerPush -PdockerHubUser=$DOCKER_USER -PdockerHubPassword=$DOCKER_PASSWORD
+        arguments: dockerPush -PdockerHubUser=$DOCKER_USER_ENV -PdockerHubPassword=$DOCKER_PASSWORD_ENV
