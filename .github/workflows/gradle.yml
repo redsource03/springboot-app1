@@ -35,4 +35,4 @@ jobs:
     - name: Push Docker Image
       uses: gradle/gradle-build-action@v2.2.2
       with:
-        arguments: dockerPush 
+        arguments: dockerPush -DdockerHubUser=${{secrets.DOCKER_USER}} -DdockerHubPassword=${{secrets.DOCKER_PASSWORD}}
