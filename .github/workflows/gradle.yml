@@ -41,8 +41,6 @@ jobs:
       with:
         arguments: clean build
     - name: Push Docker Image
-      env:
-        
       uses: gradle/gradle-build-action@v2.2.2
       with:
         arguments: dockerPush -PdockerHubUser=${{env.DOCKER_USER}} -PdockerHubPassword=${{env.DOCKER_PW}}
