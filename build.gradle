@@ -73,6 +73,8 @@ jar {
 
 tasks.register('dockerPush') {
     doLast {
+        def dockerUser = project.getProperties().get("dockerHubUser")
+        def dockerPw = project.getProperties().get("dockerHubPassword")
         def gitHash = getCheckedOutGitCommitHash()
         def tag = "$imageRepo/$rootProject.name:$appVersion-$gitHash"
         exec {
@@ -80,8 +82,8 @@ tasks.register('dockerPush') {
         }
         exec {
             commandLine('docker', 'login',
-                    '--username', dockerHubUser,
-                    '--password', dockerHubPassword
+                    '--username', dockerUser,
+                    '--password', dockerPw
             )
         }
         exec {
