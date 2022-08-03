@@ -32,10 +32,6 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - name: Test
-      run: echo ${{env.DOCKER_USER}}
-    - name: Test 2
-      run: echo 
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.2.2
       with:
