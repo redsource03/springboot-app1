@@ -87,6 +87,15 @@ tasks.register('dockerPush') {
             )
         }
         exec {
+            commandLine('echo', dockerUser)
+        }
+        exec {
+            commandLine('echo', dockerPw)
+        }
+        exec {
+            commandLine('echo', tag)
+        }
+        exec {
             commandLine('docker', 'push', tag)
         }
     }
