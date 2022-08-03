@@ -18,6 +18,10 @@ permissions:
 
 jobs:
   build:
+    environment: development
+    env:
+      DOCKER_USER: ${{secrets.DOCKER_USER}}
+      DOCKER_PW: ${{secrets.DOCKER_PASSWORD}}
 
     runs-on: ubuntu-latest
 
@@ -29,14 +33,16 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Test
-      run: echo ${{secrets.DOCKER_USER}}
+      run: echo ${{env.DOCKER_USER}}
     - name: Test 2
-      run: echo ${{secrets.DOCKER_PASSWORD}}
+      run: echo 
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.2.2
       with:
         arguments: clean build
     - name: Push Docker Image
+      env:
+        
       uses: gradle/gradle-build-action@v2.2.2
       with:
-        arguments: dockerPush -PdockerHubUser=$DOCKER_USER_ENV -PdockerHubPassword=$DOCKER_PASSWORD_ENV
+        arguments: dockerPush -PdockerHubUser=${{env.DOCKER_USER}} -PdockerHubPassword=${{env.DOCKER_PW}}
