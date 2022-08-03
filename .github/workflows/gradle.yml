@@ -28,10 +28,6 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - name: Setup Env
-      env:
-        DOCKER_USER_ENV: ${{secrets.DOCKER_USER}}
-        DOCKER_PASSWORD_ENV: ${{secrets.DOCKER_PASSWORD}}
     - name: Test
       run: echo $DOCKER_USER
     - name: Test 2
