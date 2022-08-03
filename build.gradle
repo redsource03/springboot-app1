@@ -66,6 +66,11 @@ test {
     useJUnitPlatform()
 }
 
+jar {
+    archiveClassifier=''
+    enabled = false
+}
+
 tasks.register('dockerPush') {
     doLast {
         def gitHash = getCheckedOutGitCommitHash()
