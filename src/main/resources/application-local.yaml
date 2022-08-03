@@ -1,15 +1,16 @@
+
 spring:
   application:
     name: 'springboot-app1'
 
 mongo:
   database-name: 'distributed-k8s'
-  clusters:  ${MONGO_URL:localhost:27017}
-  local-user: ${MONGO_USER:root}
-  local-password: ${MONGO_PW:root}
+  clusters: 'localhost:27017'
+  local-user: 'root'
+  local-password: 'root'
 
 kafka:
-  bootstrap-address: ${KAFKA_URL:localhost:9092}
+  bootstrap-address: 'localhost:29092'
   consumer-id: "spring-app1"
   ssl-enabled: false
   ssl:

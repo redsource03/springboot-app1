@@ -33,7 +33,7 @@ public class TestContainerInit implements ApplicationContextInitializer<Configur
                 Optional.ofNullable(yamlFactory.getObject()).orElseThrow();
         if (!initialized) {
             MONGO_DB_CONTAINER.start();
-            KAFKA_WRAPPER_CONTAINER.withStartupTimeout(Duration.ofMillis(120000));
+            KAFKA_WRAPPER_CONTAINER.withStartupTimeout(Duration.ofMillis(180000));
             KAFKA_WRAPPER_CONTAINER.start();
 
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
