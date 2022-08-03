@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: 'springboot-app1'
+
+mongo:
+  database-name: 'test'
+  clusters: 'localhost:27017'
+
+kafka:
+  bootstrap-address: 'localhost:9092'
+  consumer-id: "spring-app1"
+  ssl-enabled: false
+  topics:
+    - name: 'spring-app1-topic'
+      partitions: 1
+      replications: 1
+    - name: 'spring-app2-topic'
+      partitions: 1
+      replications: 1

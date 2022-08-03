@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.redsource.distributed.system.acceptance.AcceptanceSteps" tests="1" skipped="1" failures="0" errors="0" timestamp="2022-08-03T10:26:11" hostname="Pauls-MacBook-Pro.fritz.box" time="0.0">
+  <properties/>
+  <testcase name="initializationError" classname="com.redsource.distributed.system.acceptance.AcceptanceSteps" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
