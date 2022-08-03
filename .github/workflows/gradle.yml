@@ -31,7 +31,7 @@ jobs:
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.2.2
       with:
-        arguments: build
+        arguments: clean build
     - name: Push Docker Image
       uses: gradle/gradle-build-action@v2.2.2
       with:
