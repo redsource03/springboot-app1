@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   build:
-    environment: development
+    environment: develop
     env:
       DOCKER_USER: ${{secrets.DOCKER_USER}}
       DOCKER_PW: ${{secrets.DOCKER_PASSWORD}}
