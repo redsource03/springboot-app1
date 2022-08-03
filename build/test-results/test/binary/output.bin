@@ -1,1005 +1,0 @@
-‹12:26:11.687 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-†12:26:11.696 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-õ12:26:11.746 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.redsource.distributed.system.acceptance.AcceptanceSteps] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-∆12:26:11.766 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.redsource.distributed.system.acceptance.AcceptanceSteps]: class path resource [com/redsource/distributed/system/acceptance/AcceptanceSteps-context.xml] does not exist
-»12:26:11.767 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.redsource.distributed.system.acceptance.AcceptanceSteps]: class path resource [com/redsource/distributed/system/acceptance/AcceptanceStepsContext.groovy] does not exist
-ö12:26:11.767 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.redsource.distributed.system.acceptance.AcceptanceSteps]: no resource found for suffixes {-context.xml, Context.groovy}.
-ﬁ12:26:11.767 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.redsource.distributed.system.acceptance.AcceptanceSteps]: AcceptanceSteps does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-ù12:26:11.857 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.redsource.distributed.system.acceptance.AcceptanceSteps]
-±12:26:11.927 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/paulvincentcabunilas/Documents/pro_code/springboot-app1/build/classes/java/main/com/redsource/distributed/system/ApplicationMain.class]
-Ö12:26:11.928 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.redsource.distributed.system.ApplicationMain for test class com.redsource.distributed.system.acceptance.AcceptanceSteps
-Î12:26:12.025 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.redsource.distributed.system.acceptance.AcceptanceSteps]: using defaults.
-≥12:26:12.026 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-ï12:26:12.033 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-ª12:26:12.040 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@27a7ef08, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@280e8a1a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@11e33bac, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@30501e60, org.springframework.test.context.support.DirtiesContextTestExecutionListener@289778cd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7495699f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c2312fa, org.springframework.test.context.event.EventPublishingTestExecutionListener@4cb0a000, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ff2e84b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@74abbb, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@64a4dd8d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2dddc1b9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@65a5d4f9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@40298285]
-u12:26:12.087 [Test worker] DEBUG org.springframework.boot.ApplicationReactiveWebEnvironment - Activating profiles []
-˜12:26:12.089 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
-
-(  .   ____          _            __ _ _
-) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-*( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
-+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-*  '  |____| .__|_| |_|_| |_\__, | / / / /
-) =========|_|==============|___/=/_/_/_/
-+ :: Spring Boot ::                (v2.6.1)
-
-~2022-08-03 12:26:12.618  INFO 17882 --- [    Test worker] c.r.d.system.util.TestContainerInit      : Starting Test Containers
-Ö2022-08-03 12:26:12.636  INFO 17882 --- [    Test worker] c.r.d.s.util.MongoDBWrapperContainer     : Starting MongoDB Test Container
-‚2022-08-03 12:26:12.678  INFO 17882 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-≥2022-08-03 12:26:13.336  INFO 17882 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
-â2022-08-03 12:26:13.339  INFO 17882 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
-{2022-08-03 12:26:13.401  INFO 17882 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
-  Server Version: 20.10.17
-  API Version: 1.41
-#  Operating System: Docker Desktop
-  Total Memory: 9951 MB
-ä2022-08-03 12:26:13.406  INFO 17882 --- [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-µ2022-08-03 12:26:14.897  INFO 17882 --- [    Test worker] org.testcontainers.DockerClientFactory   : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-|2022-08-03 12:26:14.897  INFO 17882 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
-õ2022-08-03 12:26:14.898  INFO 17882 --- [    Test worker] org.testcontainers.DockerClientFactory   : ‚úîÔ∏é Docker server version should be at least 1.6.0
-©2022-08-03 12:26:15.027  INFO 17882 --- [    Test worker] org.testcontainers.DockerClientFactory   : ‚úîÔ∏é Docker environment should have more than 2GB free disk space
-í2022-08-03 12:26:15.075  INFO 17882 --- [    Test worker] üê≥ [mongo:4.0.10]                        : Creating container for image: mongo:4.0.10
-ƒ2022-08-03 12:26:15.132  INFO 17882 --- [    Test worker] üê≥ [mongo:4.0.10]                        : Starting container with ID: 7146ffdc240f279385f106e251f16b6fe45916dd919d31fa06a4890be56fe4ea
-Ã2022-08-03 12:26:15.343  INFO 17882 --- [    Test worker] üê≥ [mongo:4.0.10]                        : Container mongo:4.0.10 is starting: 7146ffdc240f279385f106e251f16b6fe45916dd919d31fa06a4890be56fe4ea
-ï2022-08-03 12:26:15.446  INFO 17882 --- [    Test worker] üê≥ [mongo:4.0.10]                        : Container mongo:4.0.10 started in PT0.416984S
-~2022-08-03 12:26:17.700  INFO 17882 --- [    Test worker] c.r.d.system.util.KafkaWrapperContainer  : Starting Kafka Container
-°2022-08-03 12:26:17.702  INFO 17882 --- [    Test worker] üê≥ [confluentinc/cp-kafka:6.2.1]         : Creating container for image: confluentinc/cp-kafka:6.2.1
-ƒ2022-08-03 12:26:17.751  INFO 17882 --- [    Test worker] üê≥ [confluentinc/cp-kafka:6.2.1]         : Starting container with ID: 963dd12cf0f0adb564f14c44e4bdda89e323048adb2e8609419e33b11b7c6d80
-€2022-08-03 12:26:18.000  INFO 17882 --- [    Test worker] üê≥ [confluentinc/cp-kafka:6.2.1]         : Container confluentinc/cp-kafka:6.2.1 is starting: 963dd12cf0f0adb564f14c44e4bdda89e323048adb2e8609419e33b11b7c6d80
-•2022-08-03 12:26:47.373  INFO 17882 --- [    Test worker] üê≥ [confluentinc/cp-kafka:6.2.1]         : Container confluentinc/cp-kafka:6.2.1 started in PT29.672535S
-É2022-08-03 12:26:56.981  INFO 17882 --- [    Test worker] c.r.d.s.util.MongoDBWrapperContainer     : Overriding mongoDB properties
-Å2022-08-03 12:26:56.987  INFO 17882 --- [    Test worker] c.r.d.system.util.KafkaWrapperContainer  : Overriding Kafka properties
-¢2022-08-03 12:26:57.031  INFO 17882 --- [    Test worker] c.r.d.system.acceptance.AcceptanceSteps  : Starting AcceptanceSteps using Java 17.0.3 on Pauls-MacBook-Pro.fritz.box with PID 17882 (started by paulvincentcabunilas in /Users/paulvincentcabunilas/Documents/pro_code/springboot-app1)
-¶2022-08-03 12:26:57.033  INFO 17882 --- [    Test worker] c.r.d.system.acceptance.AcceptanceSteps  : No active profile set, falling back to default profiles: default
-Æ2022-08-03 12:26:57.998  INFO 17882 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
-»2022-08-03 12:26:58.034  INFO 17882 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 0 Reactive MongoDB repository interfaces.
-Ä2022-08-03 12:26:58.779  INFO 17882 --- [    Test worker] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
-3	bootstrap.servers = [PLAINTEXT://localhost:53404]
-%	client.dns.lookup = use_all_dns_ips
-	client.id = 
-"	connections.max.idle.ms = 300000
- 	default.api.timeout.ms = 60000
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
- 	metrics.recording.level = INFO
-"	metrics.sample.window.ms = 30000
-	receive.buffer.bytes = 65536
-!	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 5
-	retry.backoff.ms = 100
-+	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-*	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-/	sasl.kerberos.min.time.before.relogin = 60000
-#	sasl.kerberos.service.name = null
-*	sasl.kerberos.ticket.renew.jitter = 0.05
-0	sasl.kerberos.ticket.renew.window.factor = 0.8
-*	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-)	sasl.login.refresh.buffer.seconds = 300
-,	sasl.login.refresh.min.period.seconds = 60
-(	sasl.login.refresh.window.factor = 0.8
-)	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-0	socket.connection.setup.timeout.max.ms = 30000
-,	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-,	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-/	ssl.endpoint.identification.algorithm = https
-!	ssl.engine.factory.class = null
-	ssl.key.password = null
-$	ssl.keymanager.algorithm = SunX509
-'	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-)	ssl.secure.random.implementation = null
-#	ssl.trustmanager.algorithm = PKIX
-$	ssl.truststore.certificates = null
- 	ssl.truststore.location = null
- 	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-
-z2022-08-03 12:26:58.942  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
-Ü2022-08-03 12:26:58.944  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
-Ü2022-08-03 12:26:58.947  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1659522418940
-2022-08-03 12:26:59.107  INFO 17882 --- [    Test worker] c.r.d.system.config.MongoDBConfig        : Setting up mongoDb client
-Í2022-08-03 12:26:59.157  INFO 17882 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:53403], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-∂2022-08-03 12:26:59.280  INFO 17882 --- [localhost:53403] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:3}] to localhost:53403
-∂2022-08-03 12:26:59.280  INFO 17882 --- [localhost:53403] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:4}] to localhost:53403
-º2022-08-03 12:26:59.294  INFO 17882 --- [localhost:53403] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:53403, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40115417, setName='docker-rs', canonicalAddress=7146ffdc240f:27017, hosts=[7146ffdc240f:27017], passives=[], arbiters=[], primary='7146ffdc240f:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=null, lastWriteDate=Wed Aug 03 12:26:57 CEST 2022, lastUpdateTimeNanos=14861751991500}
-Í2022-08-03 12:27:00.987  INFO 17882 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-∑2022-08-03 12:27:01.188  INFO 17882 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:11}] to localhost:27017
-∑2022-08-03 12:27:01.188  INFO 17882 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:10}] to localhost:27017
-¯2022-08-03 12:27:01.190  INFO 17882 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=73302208}
-}2022-08-03 12:27:01.471  INFO 17882 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
-!	allow.auto.create.topics = true
- 	auto.commit.interval.ms = 5000
-	auto.offset.reset = latest
-3	bootstrap.servers = [PLAINTEXT://localhost:53404]
-	check.crcs = true
-%	client.dns.lookup = use_all_dns_ips
-$	client.id = consumer-spring-app1-1
-	client.rack = 
-"	connections.max.idle.ms = 540000
- 	default.api.timeout.ms = 60000
-	enable.auto.commit = false
- 	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = spring-app1
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-&	internal.leave.group.on.close = true
-;	internal.throw.on.fetch.stable.offset.unsupported = false
-$	isolation.level = read_uncommitted
-S	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-%	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
- 	metrics.recording.level = INFO
-"	metrics.sample.window.ms = 30000
-ú	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-!	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-+	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-*	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-/	sasl.kerberos.min.time.before.relogin = 60000
-#	sasl.kerberos.service.name = null
-*	sasl.kerberos.ticket.renew.jitter = 0.05
-0	sasl.kerberos.ticket.renew.window.factor = 0.8
-*	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-)	sasl.login.refresh.buffer.seconds = 300
-,	sasl.login.refresh.min.period.seconds = 60
-(	sasl.login.refresh.window.factor = 0.8
-)	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-0	socket.connection.setup.timeout.max.ms = 30000
-,	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-,	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-/	ssl.endpoint.identification.algorithm = https
-!	ssl.engine.factory.class = null
-	ssl.key.password = null
-$	ssl.keymanager.algorithm = SunX509
-'	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-)	ssl.secure.random.implementation = null
-#	ssl.trustmanager.algorithm = PKIX
-$	ssl.truststore.certificates = null
- 	ssl.truststore.location = null
- 	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-U	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-
-z2022-08-03 12:27:01.544  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
-Ü2022-08-03 12:27:01.546  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
-Ü2022-08-03 12:27:01.546  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1659522421544
-œ2022-08-03 12:27:01.548  INFO 17882 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Subscribed to topic(s): spring-app1-topic
-}2022-08-03 12:27:01.562  INFO 17882 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
-!	allow.auto.create.topics = true
- 	auto.commit.interval.ms = 5000
-	auto.offset.reset = latest
-3	bootstrap.servers = [PLAINTEXT://localhost:53404]
-	check.crcs = true
-%	client.dns.lookup = use_all_dns_ips
-$	client.id = consumer-spring-app1-2
-	client.rack = 
-"	connections.max.idle.ms = 540000
- 	default.api.timeout.ms = 60000
-	enable.auto.commit = false
- 	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = spring-app1
-	group.instance.id = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-&	internal.leave.group.on.close = true
-;	internal.throw.on.fetch.stable.offset.unsupported = false
-$	isolation.level = read_uncommitted
-S	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-%	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
- 	metrics.recording.level = INFO
-"	metrics.sample.window.ms = 30000
-ú	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-!	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.ms = 100
-+	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-*	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-/	sasl.kerberos.min.time.before.relogin = 60000
-#	sasl.kerberos.service.name = null
-*	sasl.kerberos.ticket.renew.jitter = 0.05
-0	sasl.kerberos.ticket.renew.window.factor = 0.8
-*	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-)	sasl.login.refresh.buffer.seconds = 300
-,	sasl.login.refresh.min.period.seconds = 60
-(	sasl.login.refresh.window.factor = 0.8
-)	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-0	socket.connection.setup.timeout.max.ms = 30000
-,	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-,	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-/	ssl.endpoint.identification.algorithm = https
-!	ssl.engine.factory.class = null
-	ssl.key.password = null
-$	ssl.keymanager.algorithm = SunX509
-'	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-)	ssl.secure.random.implementation = null
-#	ssl.trustmanager.algorithm = PKIX
-$	ssl.truststore.certificates = null
- 	ssl.truststore.location = null
- 	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-U	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-
-z2022-08-03 12:27:01.637  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
-Ü2022-08-03 12:27:01.639  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
-Ü2022-08-03 12:27:01.640  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1659522421636
-œ2022-08-03 12:27:01.642  INFO 17882 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Subscribed to topic(s): spring-app2-topic
-»2022-08-03 12:27:01.740  INFO 17882 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Cluster ID: yQJudjcOSnaRxtAq-u_I3Q
-»2022-08-03 12:27:01.764  INFO 17882 --- [ntainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Cluster ID: yQJudjcOSnaRxtAq-u_I3Q
-É2022-08-03 12:27:01.793  WARN 17882 --- [    Test worker] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-Ó2022-08-03 12:27:02.021  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Discovered group coordinator localhost:53404 (id: 2147483646 rack: null)
-∏2022-08-03 12:27:02.024  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] (Re-)joining group
-Ó2022-08-03 12:27:02.060  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Discovered group coordinator localhost:53404 (id: 2147483646 rack: null)
-∏2022-08-03 12:27:02.061  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] (Re-)joining group
-Ï2022-08-03 12:27:02.111  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Request joining group due to: need to re-join with the given member-id
-∏2022-08-03 12:27:02.112  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] (Re-)joining group
-Ï2022-08-03 12:27:02.120  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Request joining group due to: need to re-join with the given member-id
-∏2022-08-03 12:27:02.120  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] (Re-)joining group
-ƒ2022-08-03 12:27:02.210  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Successfully joined group with generation Generation{generationId=1, memberId='consumer-spring-app1-1-ad127e6d-42b1-4cfc-8bf7-89e73b5c3dd7', protocol='range'}
-ƒ2022-08-03 12:27:02.215  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Successfully joined group with generation Generation{generationId=1, memberId='consumer-spring-app1-2-2d501bad-4a17-432a-a732-6bd97a418085', protocol='range'}
-©2022-08-03 12:27:02.233  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Finished assignment for group at generation 1: {consumer-spring-app1-1-ad127e6d-42b1-4cfc-8bf7-89e73b5c3dd7=Assignment(partitions=[spring-app1-topic-0]), consumer-spring-app1-2-2d501bad-4a17-432a-a732-6bd97a418085=Assignment(partitions=[spring-app2-topic-0])}
-¬2022-08-03 12:27:02.487  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Successfully synced group in generation Generation{generationId=1, memberId='consumer-spring-app1-1-ad127e6d-42b1-4cfc-8bf7-89e73b5c3dd7', protocol='range'}
-Û2022-08-03 12:27:02.489  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Notifying assignor about the new Assignment(partitions=[spring-app1-topic-0])
-¬2022-08-03 12:27:02.491  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Successfully synced group in generation Generation{generationId=1, memberId='consumer-spring-app1-2-2d501bad-4a17-432a-a732-6bd97a418085', protocol='range'}
-Û2022-08-03 12:27:02.497  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Notifying assignor about the new Assignment(partitions=[spring-app2-topic-0])
-€2022-08-03 12:27:02.500  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Adding newly assigned partitions: spring-app2-topic-0
-€2022-08-03 12:27:02.500  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Adding newly assigned partitions: spring-app1-topic-0
-·2022-08-03 12:27:02.545  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Found no committed offset for partition spring-app2-topic-0
-·2022-08-03 12:27:02.545  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Found no committed offset for partition spring-app1-topic-0
-·2022-08-03 12:27:02.565  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Found no committed offset for partition spring-app1-topic-0
-·2022-08-03 12:27:02.565  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Found no committed offset for partition spring-app2-topic-0
-ı2022-08-03 12:27:03.219  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Resetting offset for partition spring-app2-topic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:53404 (id: 1 rack: null)], epoch=0}}.
-ı2022-08-03 12:27:03.219  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Resetting offset for partition spring-app1-topic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:53404 (id: 1 rack: null)], epoch=0}}.
-ù2022-08-03 12:27:03.452  INFO 17882 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : spring-app1: partitions assigned: [spring-app2-topic-0]
-ù2022-08-03 12:27:03.455  INFO 17882 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : spring-app1: partitions assigned: [spring-app1-topic-0]
-†2022-08-03 12:27:03.908  INFO 17882 --- [| adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
-~2022-08-03 12:27:03.915  INFO 17882 --- [| adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
-¢2022-08-03 12:27:03.915  INFO 17882 --- [| adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-~2022-08-03 12:27:03.915  INFO 17882 --- [| adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
-f2022-08-03 12:27:06.041  INFO 17882 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
-
-rError starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-f2022-08-03 12:27:06.072 ERROR 17882 --- [    Test worker] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-:Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-uIdentify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-  ç[32m[1m‚îå‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îê[0m
-  Ö[32m[1m‚îÇ[0m Share your Cucumber Report with your team at [36m[1m[4mhttps://reports.cucumber.io[0m          [32m[1m‚îÇ[0m
-  t[32m[1m‚îÇ[0m Activate publishing with one of the following:                                    [32m[1m‚îÇ[0m
-  t[32m[1m‚îÇ[0m                                                                                   [32m[1m‚îÇ[0m
-  Ü[32m[1m‚îÇ[0m src/test/resources/cucumber.properties:          [36mcucumber.publish.enabled[0m=[36mtrue[0m    [32m[1m‚îÇ[0m
-  Ü[32m[1m‚îÇ[0m src/test/resources/junit-platform.properties:    [36mcucumber.publish.enabled[0m=[36mtrue[0m    [32m[1m‚îÇ[0m
-  Ü[32m[1m‚îÇ[0m Environment variable:                            [36mCUCUMBER_PUBLISH_ENABLED[0m=[36mtrue[0m    [32m[1m‚îÇ[0m
-  Ü[32m[1m‚îÇ[0m JUnit:                                           [36m@CucumberOptions[0m(publish = [36mtrue[0m) [32m[1m‚îÇ[0m
-  t[32m[1m‚îÇ[0m                                                                                   [32m[1m‚îÇ[0m
-  }[32m[1m‚îÇ[0m More information at [36mhttps://reports.cucumber.io/docs/cucumber-jvm[0m                 [32m[1m‚îÇ[0m
-  t[32m[1m‚îÇ[0m                                                                                   [32m[1m‚îÇ[0m
-  t[32m[1m‚îÇ[0m Disable this message with one of the following:                                   [32m[1m‚îÇ[0m
-  t[32m[1m‚îÇ[0m                                                                                   [32m[1m‚îÇ[0m
-  Ü[32m[1m‚îÇ[0m src/test/resources/cucumber.properties:          [36mcucumber.publish.quiet[0m=[36mtrue[0m      [32m[1m‚îÇ[0m
-  Ü[32m[1m‚îÇ[0m src/test/resources/junit-platform.properties:    [36mcucumber.publish.quiet[0m=[36mtrue[0m      [32m[1m‚îÇ[0m
-  ç[32m[1m‚îî‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îò[0m
- ®2022-08-03 12:27:06.287  INFO 17882 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.redsource.distributed.system.integration.ComponentIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
- Ë2022-08-03 12:27:06.289  INFO 17882 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.redsource.distributed.system.integration.ComponentIntegrationTest]: ComponentIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
- ä2022-08-03 12:27:06.316  INFO 17882 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.redsource.distributed.system.ApplicationMain for test class com.redsource.distributed.system.integration.ComponentIntegrationTest
- Æ2022-08-03 12:27:06.327  INFO 17882 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
- ∏2022-08-03 12:27:06.328  INFO 17882 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7d95a717, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5c0f508b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a2ffb0b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@13cae908, org.springframework.test.context.support.DirtiesContextTestExecutionListener@43b74979, org.springframework.test.context.transaction.TransactionalTestExecutionListener@659ac28c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60688a97, org.springframework.test.context.event.EventPublishingTestExecutionListener@242ebd3b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5d2bc446, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6e96f3cd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4a0ee0ba, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b984ba5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1812b564, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@41433530]
- 
- (  .   ____          _            __ _ _
- ) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
- *( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- + \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
- *  '  |____| .__|_| |_|_| |_\__, | / / / /
- ) =========|_|==============|___/=/_/_/_/
- + :: Spring Boot ::                (v2.6.1)
- 
- ~2022-08-03 12:27:06.421  INFO 17882 --- [    Test worker] c.r.d.system.util.TestContainerInit      : Starting Test Containers
- É2022-08-03 12:27:06.426  INFO 17882 --- [    Test worker] c.r.d.s.util.MongoDBWrapperContainer     : Overriding mongoDB properties
- Å2022-08-03 12:27:06.427  INFO 17882 --- [    Test worker] c.r.d.system.util.KafkaWrapperContainer  : Overriding Kafka properties
- ´2022-08-03 12:27:06.428  INFO 17882 --- [    Test worker] c.r.d.s.i.ComponentIntegrationTest       : Starting ComponentIntegrationTest using Java 17.0.3 on Pauls-MacBook-Pro.fritz.box with PID 17882 (started by paulvincentcabunilas in /Users/paulvincentcabunilas/Documents/pro_code/springboot-app1)
- ¶2022-08-03 12:27:06.430  INFO 17882 --- [    Test worker] c.r.d.s.i.ComponentIntegrationTest       : No active profile set, falling back to default profiles: default
- Æ2022-08-03 12:27:06.875  INFO 17882 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
- »2022-08-03 12:27:06.904  INFO 17882 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Reactive MongoDB repository interfaces.
- Ä2022-08-03 12:27:07.029  INFO 17882 --- [    Test worker] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
- 3	bootstrap.servers = [PLAINTEXT://localhost:53404]
- %	client.dns.lookup = use_all_dns_ips
- 	client.id = 
- "	connections.max.idle.ms = 300000
-  	default.api.timeout.ms = 60000
- 	metadata.max.age.ms = 300000
- 	metric.reporters = []
- 	metrics.num.samples = 2
-  	metrics.recording.level = INFO
- "	metrics.sample.window.ms = 30000
- 	receive.buffer.bytes = 65536
- !	reconnect.backoff.max.ms = 1000
- 	reconnect.backoff.ms = 50
- 	request.timeout.ms = 30000
- 	retries = 5
- 	retry.backoff.ms = 100
- +	sasl.client.callback.handler.class = null
- 	sasl.jaas.config = null
- *	sasl.kerberos.kinit.cmd = /usr/bin/kinit
- /	sasl.kerberos.min.time.before.relogin = 60000
- #	sasl.kerberos.service.name = null
- *	sasl.kerberos.ticket.renew.jitter = 0.05
- 0	sasl.kerberos.ticket.renew.window.factor = 0.8
- *	sasl.login.callback.handler.class = null
- 	sasl.login.class = null
- )	sasl.login.refresh.buffer.seconds = 300
- ,	sasl.login.refresh.min.period.seconds = 60
- (	sasl.login.refresh.window.factor = 0.8
- )	sasl.login.refresh.window.jitter = 0.05
- 	sasl.mechanism = GSSAPI
- 	security.protocol = PLAINTEXT
- 	security.providers = null
- 	send.buffer.bytes = 131072
- 0	socket.connection.setup.timeout.max.ms = 30000
- ,	socket.connection.setup.timeout.ms = 10000
- 	ssl.cipher.suites = null
- ,	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
- /	ssl.endpoint.identification.algorithm = https
- !	ssl.engine.factory.class = null
- 	ssl.key.password = null
- $	ssl.keymanager.algorithm = SunX509
- '	ssl.keystore.certificate.chain = null
- 	ssl.keystore.key = null
- 	ssl.keystore.location = null
- 	ssl.keystore.password = null
- 	ssl.keystore.type = JKS
- 	ssl.protocol = TLSv1.3
- 	ssl.provider = null
- )	ssl.secure.random.implementation = null
- #	ssl.trustmanager.algorithm = PKIX
- $	ssl.truststore.certificates = null
-  	ssl.truststore.location = null
-  	ssl.truststore.password = null
- 	ssl.truststore.type = JKS
- 
- z2022-08-03 12:27:07.039  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
- Ü2022-08-03 12:27:07.039  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
- Ü2022-08-03 12:27:07.039  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1659522427039
- 2022-08-03 12:27:07.094  INFO 17882 --- [    Test worker] c.r.d.system.config.MongoDBConfig        : Setting up mongoDb client
- Í2022-08-03 12:27:07.094  INFO 17882 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:53403], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
- ∂2022-08-03 12:27:07.130  INFO 17882 --- [localhost:53403] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:5}] to localhost:53403
- ∂2022-08-03 12:27:07.131  INFO 17882 --- [localhost:53403] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:6}] to localhost:53403
- º2022-08-03 12:27:07.131  INFO 17882 --- [localhost:53403] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:53403, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24505750, setName='docker-rs', canonicalAddress=7146ffdc240f:27017, hosts=[7146ffdc240f:27017], passives=[], arbiters=[], primary='7146ffdc240f:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=null, lastWriteDate=Wed Aug 03 12:26:57 CEST 2022, lastUpdateTimeNanos=14869622315292}
- Í2022-08-03 12:27:07.539  INFO 17882 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
- ∑2022-08-03 12:27:07.614  INFO 17882 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:13}] to localhost:27017
- ∑2022-08-03 12:27:07.613  INFO 17882 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:12}] to localhost:27017
- ¯2022-08-03 12:27:07.614  INFO 17882 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=47757625}
- }2022-08-03 12:27:07.716  INFO 17882 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
- !	allow.auto.create.topics = true
-  	auto.commit.interval.ms = 5000
- 	auto.offset.reset = latest
- 3	bootstrap.servers = [PLAINTEXT://localhost:53404]
- 	check.crcs = true
- %	client.dns.lookup = use_all_dns_ips
- $	client.id = consumer-spring-app1-3
- 	client.rack = 
- "	connections.max.idle.ms = 540000
-  	default.api.timeout.ms = 60000
- 	enable.auto.commit = false
-  	exclude.internal.topics = true
- 	fetch.max.bytes = 52428800
- 	fetch.max.wait.ms = 500
- 	fetch.min.bytes = 1
- 	group.id = spring-app1
- 	group.instance.id = null
- 	heartbeat.interval.ms = 3000
- 	interceptor.classes = []
- &	internal.leave.group.on.close = true
- ;	internal.throw.on.fetch.stable.offset.unsupported = false
- $	isolation.level = read_uncommitted
- S	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
- %	max.partition.fetch.bytes = 1048576
- 	max.poll.interval.ms = 300000
- 	max.poll.records = 500
- 	metadata.max.age.ms = 300000
- 	metric.reporters = []
- 	metrics.num.samples = 2
-  	metrics.recording.level = INFO
- "	metrics.sample.window.ms = 30000
- ú	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
- 	receive.buffer.bytes = 65536
- !	reconnect.backoff.max.ms = 1000
- 	reconnect.backoff.ms = 50
- 	request.timeout.ms = 30000
- 	retry.backoff.ms = 100
- +	sasl.client.callback.handler.class = null
- 	sasl.jaas.config = null
- *	sasl.kerberos.kinit.cmd = /usr/bin/kinit
- /	sasl.kerberos.min.time.before.relogin = 60000
- #	sasl.kerberos.service.name = null
- *	sasl.kerberos.ticket.renew.jitter = 0.05
- 0	sasl.kerberos.ticket.renew.window.factor = 0.8
- *	sasl.login.callback.handler.class = null
- 	sasl.login.class = null
- )	sasl.login.refresh.buffer.seconds = 300
- ,	sasl.login.refresh.min.period.seconds = 60
- (	sasl.login.refresh.window.factor = 0.8
- )	sasl.login.refresh.window.jitter = 0.05
- 	sasl.mechanism = GSSAPI
- 	security.protocol = PLAINTEXT
- 	security.providers = null
- 	send.buffer.bytes = 131072
- 	session.timeout.ms = 45000
- 0	socket.connection.setup.timeout.max.ms = 30000
- ,	socket.connection.setup.timeout.ms = 10000
- 	ssl.cipher.suites = null
- ,	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
- /	ssl.endpoint.identification.algorithm = https
- !	ssl.engine.factory.class = null
- 	ssl.key.password = null
- $	ssl.keymanager.algorithm = SunX509
- '	ssl.keystore.certificate.chain = null
- 	ssl.keystore.key = null
- 	ssl.keystore.location = null
- 	ssl.keystore.password = null
- 	ssl.keystore.type = JKS
- 	ssl.protocol = TLSv1.3
- 	ssl.provider = null
- )	ssl.secure.random.implementation = null
- #	ssl.trustmanager.algorithm = PKIX
- $	ssl.truststore.certificates = null
-  	ssl.truststore.location = null
-  	ssl.truststore.password = null
- 	ssl.truststore.type = JKS
- U	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
- 
- z2022-08-03 12:27:07.724  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
- Ü2022-08-03 12:27:07.725  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
- Ü2022-08-03 12:27:07.728  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1659522427724
- œ2022-08-03 12:27:07.735  INFO 17882 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] Subscribed to topic(s): spring-app1-topic
- }2022-08-03 12:27:07.737  INFO 17882 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
- !	allow.auto.create.topics = true
-  	auto.commit.interval.ms = 5000
- 	auto.offset.reset = latest
- 3	bootstrap.servers = [PLAINTEXT://localhost:53404]
- 	check.crcs = true
- %	client.dns.lookup = use_all_dns_ips
- $	client.id = consumer-spring-app1-4
- 	client.rack = 
- "	connections.max.idle.ms = 540000
-  	default.api.timeout.ms = 60000
- 	enable.auto.commit = false
-  	exclude.internal.topics = true
- 	fetch.max.bytes = 52428800
- 	fetch.max.wait.ms = 500
- 	fetch.min.bytes = 1
- 	group.id = spring-app1
- 	group.instance.id = null
- 	heartbeat.interval.ms = 3000
- 	interceptor.classes = []
- &	internal.leave.group.on.close = true
- ;	internal.throw.on.fetch.stable.offset.unsupported = false
- $	isolation.level = read_uncommitted
- S	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
- %	max.partition.fetch.bytes = 1048576
- 	max.poll.interval.ms = 300000
- 	max.poll.records = 500
- 	metadata.max.age.ms = 300000
- 	metric.reporters = []
- 	metrics.num.samples = 2
-  	metrics.recording.level = INFO
- "	metrics.sample.window.ms = 30000
- ú	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
- 	receive.buffer.bytes = 65536
- !	reconnect.backoff.max.ms = 1000
- 	reconnect.backoff.ms = 50
- 	request.timeout.ms = 30000
- 	retry.backoff.ms = 100
- +	sasl.client.callback.handler.class = null
- 	sasl.jaas.config = null
- *	sasl.kerberos.kinit.cmd = /usr/bin/kinit
- /	sasl.kerberos.min.time.before.relogin = 60000
- #	sasl.kerberos.service.name = null
- *	sasl.kerberos.ticket.renew.jitter = 0.05
- 0	sasl.kerberos.ticket.renew.window.factor = 0.8
- *	sasl.login.callback.handler.class = null
- 	sasl.login.class = null
- )	sasl.login.refresh.buffer.seconds = 300
- ,	sasl.login.refresh.min.period.seconds = 60
- (	sasl.login.refresh.window.factor = 0.8
- )	sasl.login.refresh.window.jitter = 0.05
- 	sasl.mechanism = GSSAPI
- 	security.protocol = PLAINTEXT
- 	security.providers = null
- 	send.buffer.bytes = 131072
- 	session.timeout.ms = 45000
- 0	socket.connection.setup.timeout.max.ms = 30000
- ,	socket.connection.setup.timeout.ms = 10000
- 	ssl.cipher.suites = null
- ,	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
- /	ssl.endpoint.identification.algorithm = https
- !	ssl.engine.factory.class = null
- 	ssl.key.password = null
- $	ssl.keymanager.algorithm = SunX509
- '	ssl.keystore.certificate.chain = null
- 	ssl.keystore.key = null
- 	ssl.keystore.location = null
- 	ssl.keystore.password = null
- 	ssl.keystore.type = JKS
- 	ssl.protocol = TLSv1.3
- 	ssl.provider = null
- )	ssl.secure.random.implementation = null
- #	ssl.trustmanager.algorithm = PKIX
- $	ssl.truststore.certificates = null
-  	ssl.truststore.location = null
-  	ssl.truststore.password = null
- 	ssl.truststore.type = JKS
- U	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
- 
- z2022-08-03 12:27:07.743  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
- Ü2022-08-03 12:27:07.743  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
- Ü2022-08-03 12:27:07.743  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1659522427743
- œ2022-08-03 12:27:07.747  INFO 17882 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] Subscribed to topic(s): spring-app2-topic
- ∞2022-08-03 12:27:07.774  INFO 17882 --- [    Test worker] c.r.d.s.i.ComponentIntegrationTest       : Started ComponentIntegrationTest in 1.424 seconds (JVM running for 58.143)
- »2022-08-03 12:27:07.785  INFO 17882 --- [ntainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] Cluster ID: yQJudjcOSnaRxtAq-u_I3Q
- »2022-08-03 12:27:07.785  INFO 17882 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] Cluster ID: yQJudjcOSnaRxtAq-u_I3Q
- Ó2022-08-03 12:27:07.790  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] Discovered group coordinator localhost:53404 (id: 2147483646 rack: null)
- Ó2022-08-03 12:27:07.790  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] Discovered group coordinator localhost:53404 (id: 2147483646 rack: null)
- ∏2022-08-03 12:27:07.793  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] (Re-)joining group
- ∏2022-08-03 12:27:07.795  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] (Re-)joining group
-Ï2022-08-03 12:27:07.826  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] Request joining group due to: need to re-join with the given member-id
-Ï2022-08-03 12:27:07.826  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] Request joining group due to: need to re-join with the given member-id
-∏2022-08-03 12:27:07.828  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] (Re-)joining group
-∏2022-08-03 12:27:07.828  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] (Re-)joining group
-‡2022-08-03 12:27:08.235  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Request joining group due to: group is already rebalancing
-‡2022-08-03 12:27:08.234  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Request joining group due to: group is already rebalancing
-ﬂ2022-08-03 12:27:08.240  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Revoke previously assigned partitions spring-app1-topic-0
-ﬂ2022-08-03 12:27:08.240  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Revoke previously assigned partitions spring-app2-topic-0
-ú2022-08-03 12:27:08.242  INFO 17882 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : spring-app1: partitions revoked: [spring-app1-topic-0]
-ú2022-08-03 12:27:08.242  INFO 17882 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : spring-app1: partitions revoked: [spring-app2-topic-0]
-∏2022-08-03 12:27:08.242  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] (Re-)joining group
-∏2022-08-03 12:27:08.242  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] (Re-)joining group
-ƒ2022-08-03 12:27:08.273  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Successfully joined group with generation Generation{generationId=2, memberId='consumer-spring-app1-1-ad127e6d-42b1-4cfc-8bf7-89e73b5c3dd7', protocol='range'}
-ƒ2022-08-03 12:27:08.280  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Successfully joined group with generation Generation{generationId=2, memberId='consumer-spring-app1-2-2d501bad-4a17-432a-a732-6bd97a418085', protocol='range'}
-ƒ2022-08-03 12:27:08.294  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] Successfully joined group with generation Generation{generationId=2, memberId='consumer-spring-app1-3-5d026f67-5e08-488a-9fc0-b8d0e429fbc9', protocol='range'}
-ƒ2022-08-03 12:27:08.294  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] Successfully joined group with generation Generation{generationId=2, memberId='consumer-spring-app1-4-75002a45-4777-4155-b4db-3c4fb1b03646', protocol='range'}
-◊2022-08-03 12:27:08.661  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Finished assignment for group at generation 2: {consumer-spring-app1-1-ad127e6d-42b1-4cfc-8bf7-89e73b5c3dd7=Assignment(partitions=[spring-app1-topic-0]), consumer-spring-app1-2-2d501bad-4a17-432a-a732-6bd97a418085=Assignment(partitions=[spring-app2-topic-0]), consumer-spring-app1-3-5d026f67-5e08-488a-9fc0-b8d0e429fbc9=Assignment(partitions=[]), consumer-spring-app1-4-75002a45-4777-4155-b4db-3c4fb1b03646=Assignment(partitions=[])}
-¬2022-08-03 12:27:08.703  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Successfully synced group in generation Generation{generationId=2, memberId='consumer-spring-app1-1-ad127e6d-42b1-4cfc-8bf7-89e73b5c3dd7', protocol='range'}
-Û2022-08-03 12:27:08.704  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Notifying assignor about the new Assignment(partitions=[spring-app1-topic-0])
-€2022-08-03 12:27:08.704  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Adding newly assigned partitions: spring-app1-topic-0
-¬2022-08-03 12:27:08.705  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Successfully synced group in generation Generation{generationId=2, memberId='consumer-spring-app1-2-2d501bad-4a17-432a-a732-6bd97a418085', protocol='range'}
-Û2022-08-03 12:27:08.706  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Notifying assignor about the new Assignment(partitions=[spring-app2-topic-0])
-€2022-08-03 12:27:08.706  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Adding newly assigned partitions: spring-app2-topic-0
-¬2022-08-03 12:27:08.715  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] Successfully synced group in generation Generation{generationId=2, memberId='consumer-spring-app1-4-75002a45-4777-4155-b4db-3c4fb1b03646', protocol='range'}
-¬2022-08-03 12:27:08.715  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] Successfully synced group in generation Generation{generationId=2, memberId='consumer-spring-app1-3-5d026f67-5e08-488a-9fc0-b8d0e429fbc9', protocol='range'}
-‡2022-08-03 12:27:08.715  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] Notifying assignor about the new Assignment(partitions=[])
-‡2022-08-03 12:27:08.715  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] Notifying assignor about the new Assignment(partitions=[])
-»2022-08-03 12:27:08.716  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-3, groupId=spring-app1] Adding newly assigned partitions: 
-»2022-08-03 12:27:08.717  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-4, groupId=spring-app1] Adding newly assigned partitions: 
-ä2022-08-03 12:27:08.717  INFO 17882 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : spring-app1: partitions assigned: []
-ä2022-08-03 12:27:08.717  INFO 17882 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : spring-app1: partitions assigned: []
-˛2022-08-03 12:27:08.726  INFO 17882 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-2, groupId=spring-app1] Setting offset for partition spring-app2-topic-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:53404 (id: 1 rack: null)], epoch=0}}
-˛2022-08-03 12:27:08.726  INFO 17882 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-spring-app1-1, groupId=spring-app1] Setting offset for partition spring-app1-topic-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:53404 (id: 1 rack: null)], epoch=0}}
-ù2022-08-03 12:27:08.726  INFO 17882 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : spring-app1: partitions assigned: [spring-app1-topic-0]
-ù2022-08-03 12:27:08.726  INFO 17882 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : spring-app1: partitions assigned: [spring-app2-topic-0]
-ò2022-08-03 12:27:09.437  INFO 17882 --- [    Test worker] c.r.d.system.service.PublisherService    : Sending message payload to topic:spring-app1-topic
-}2022-08-03 12:27:09.460  INFO 17882 --- [    Test worker] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	batch.size = 16384
-3	bootstrap.servers = [PLAINTEXT://localhost:53404]
-	buffer.memory = 33554432
-%	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.type = none
-"	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	interceptor.classes = []
-O	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-+	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
- 	metrics.recording.level = INFO
-"	metrics.sample.window.ms = 30000
-Z	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
-	receive.buffer.bytes = 32768
-!	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-+	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-*	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-/	sasl.kerberos.min.time.before.relogin = 60000
-#	sasl.kerberos.service.name = null
-*	sasl.kerberos.ticket.renew.jitter = 0.05
-0	sasl.kerberos.ticket.renew.window.factor = 0.8
-*	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-)	sasl.login.refresh.buffer.seconds = 300
-,	sasl.login.refresh.min.period.seconds = 60
-(	sasl.login.refresh.window.factor = 0.8
-)	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-0	socket.connection.setup.timeout.max.ms = 30000
-,	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-,	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-/	ssl.endpoint.identification.algorithm = https
-!	ssl.engine.factory.class = null
-	ssl.key.password = null
-$	ssl.keymanager.algorithm = SunX509
-'	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-)	ssl.secure.random.implementation = null
-#	ssl.trustmanager.algorithm = PKIX
-$	ssl.truststore.certificates = null
- 	ssl.truststore.location = null
- 	ssl.truststore.password = null
-	ssl.truststore.type = JKS
- 	transaction.timeout.ms = 60000
-	transactional.id = null
-Q	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
-
-z2022-08-03 12:27:09.496  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
-Ü2022-08-03 12:27:09.497  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
-Ü2022-08-03 12:27:09.501  INFO 17882 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1659522429496
-ß2022-08-03 12:27:09.547  INFO 17882 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: yQJudjcOSnaRxtAq-u_I3Q
-£2022-08-03 12:27:09.639  INFO 17882 --- [ad | producer-1] c.r.d.system.service.PublisherService    : Successful sending message payload to topic:spring-app1-topic
-Í2022-08-03 12:27:09.672  INFO 17882 --- [ntainer#0-0-C-1] c.r.d.system.consumers.KafkaConsumer     : I received a message from topic:spring-app1-topic, I'm just going to save it and send it to topic:spring-app2-topic , value: Payload
-∂2022-08-03 12:27:09.784  INFO 17882 --- [      Thread-13] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:9, serverValue:7}] to localhost:53403
-ò2022-08-03 12:27:09.832  INFO 17882 --- [      Thread-11] c.r.d.system.service.PublisherService    : Sending message payload to topic:spring-app2-topic
-}2022-08-03 12:27:09.834  INFO 17882 --- [      Thread-11] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	batch.size = 16384
-3	bootstrap.servers = [PLAINTEXT://localhost:53404]
-	buffer.memory = 33554432
-%	client.dns.lookup = use_all_dns_ips
-	client.id = producer-2
-	compression.type = none
-"	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	interceptor.classes = []
-O	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-+	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metric.reporters = []
-	metrics.num.samples = 2
- 	metrics.recording.level = INFO
-"	metrics.sample.window.ms = 30000
-Z	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
-	receive.buffer.bytes = 32768
-!	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.ms = 100
-+	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-*	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-/	sasl.kerberos.min.time.before.relogin = 60000
-#	sasl.kerberos.service.name = null
-*	sasl.kerberos.ticket.renew.jitter = 0.05
-0	sasl.kerberos.ticket.renew.window.factor = 0.8
-*	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-)	sasl.login.refresh.buffer.seconds = 300
-,	sasl.login.refresh.min.period.seconds = 60
-(	sasl.login.refresh.window.factor = 0.8
-)	sasl.login.refresh.window.jitter = 0.05
-	sasl.mechanism = GSSAPI
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-0	socket.connection.setup.timeout.max.ms = 30000
-,	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-,	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-/	ssl.endpoint.identification.algorithm = https
-!	ssl.engine.factory.class = null
-	ssl.key.password = null
-$	ssl.keymanager.algorithm = SunX509
-'	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-)	ssl.secure.random.implementation = null
-#	ssl.trustmanager.algorithm = PKIX
-$	ssl.truststore.certificates = null
- 	ssl.truststore.location = null
- 	ssl.truststore.password = null
-	ssl.truststore.type = JKS
- 	transaction.timeout.ms = 60000
-	transactional.id = null
-Q	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
-
-z2022-08-03 12:27:09.838  INFO 17882 --- [      Thread-11] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
-Ü2022-08-03 12:27:09.839  INFO 17882 --- [      Thread-11] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
-Ü2022-08-03 12:27:09.839  INFO 17882 --- [      Thread-11] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1659522429838
-ß2022-08-03 12:27:09.860  INFO 17882 --- [ad | producer-2] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-2] Cluster ID: yQJudjcOSnaRxtAq-u_I3Q
-î2022-08-03 12:27:09.862  INFO 17882 --- [      Thread-11] c.r.d.system.consumers.KafkaConsumer     : payload saved with id:62ea4d7d589d7f76a612e7cd
-£2022-08-03 12:27:09.889  INFO 17882 --- [ad | producer-2] c.r.d.system.service.PublisherService    : Successful sending message payload to topic:spring-app2-topic
-◊2022-08-03 12:27:09.896  INFO 17882 --- [ntainer#1-0-C-1] c.r.d.system.consumers.KafkaConsumer     : I received a message from topic:spring-app2-topic value:Payload, I'm just going to save it and be on my merry way
-î2022-08-03 12:27:09.904  INFO 17882 --- [      Thread-17] c.r.d.system.consumers.KafkaConsumer     : payload saved with id:62ea4d7d589d7f76a612e7ce
-∑2022-08-03 12:27:10.719  INFO 17882 --- [      Thread-17] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:8}] to localhost:53403
-	Í2022-08-03 12:27:11.964  INFO 17882 --- [    Test worker] c.r.d.system.consumers.KafkaConsumer     : I received a message from topic:spring-app1-topic, I'm just going to save it and send it to topic:spring-app2-topic , value: payload
-	2022-08-03 12:27:11.979  INFO 17882 --- [    Test worker] c.r.d.system.consumers.KafkaConsumer     : payload saved with id:123
-	
-◊2022-08-03 12:27:11.998  INFO 17882 --- [    Test worker] c.r.d.system.consumers.KafkaConsumer     : I received a message from topic:spring-app2-topic value:payload, I'm just going to save it and be on my merry way
-	
-2022-08-03 12:27:11.999  INFO 17882 --- [    Test worker] c.r.d.system.consumers.KafkaConsumer     : payload saved with id:123
-	Í2022-08-03 12:27:12.002  INFO 17882 --- [    Test worker] c.r.d.system.consumers.KafkaConsumer     : I received a message from topic:spring-app1-topic, I'm just going to save it and send it to topic:spring-app2-topic , value: payload
-	ß2022-08-03 12:27:12.002 ERROR 17882 --- [    Test worker] c.r.d.system.consumers.KafkaConsumer     : Error in processing payload received from topic:spring-app2-topic
-	å2022-08-03 12:27:12.016 ERROR 17882 --- [    Test worker] reactor.core.publisher.Operators         : Operator called default onErrorDropped
-	
-	Preactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.Throwable: oopss
-	&Caused by: java.lang.Throwable: oopss
-	Ñ	at com.redsource.distributed.system.consumers.KafkaConsumerTest.processingErrorOnSaveTopic1(KafkaConsumerTest.java:48) ~[test/:na]
-	\	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	n	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	v	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	H	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	Ö	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725) ~[junit-platform-commons-1.8.1.jar:1.8.1]
-	Ç	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	¨	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	Ö	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ì	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	é	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	≠	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ç	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	≠	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ñ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ù	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ï	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	Ñ	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	É	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	¶	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ù	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	î	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ì	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	w	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	á	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	H	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	√	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	w	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	á	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	H	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	√	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	w	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	á	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	¿	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ü	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	õ	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[na:na]
-	w	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[na:na]
-	Ä	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[na:na]
-	Ü	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[na:na]
-	w	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[na:na]
-	_	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) ~[na:na]
-	_	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75) ~[na:na]
-	æ	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
-	≥	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) ~[na:na]
-	è	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) ~[na:na]
-	q	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) ~[na:na]
-	\	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	n	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	v	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	H	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	b	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
-	b	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
-	r	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
-	Å	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
-	@	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
-	`	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
-	w	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
-	b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
-	a	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
-	s	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
-	ã	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133) ~[na:na]
-	ä	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
-	u	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
-	v	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
-	
-	◊2022-08-03 12:27:12.027  INFO 17882 --- [    Test worker] c.r.d.system.consumers.KafkaConsumer     : I received a message from topic:spring-app2-topic value:payload, I'm just going to save it and be on my merry way
-	£2022-08-03 12:27:12.028 ERROR 17882 --- [    Test worker] c.r.d.system.consumers.KafkaConsumer     : Error in saving payload received from topic:spring-app2-topic
-	å2022-08-03 12:27:12.032 ERROR 17882 --- [    Test worker] reactor.core.publisher.Operators         : Operator called default onErrorDropped
-	
-	Preactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.Throwable: oopss
-	&Caused by: java.lang.Throwable: oopss
-	Ñ	at com.redsource.distributed.system.consumers.KafkaConsumerTest.processingErrorOnSaveTopic2(KafkaConsumerTest.java:72) ~[test/:na]
-	\	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	n	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	v	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	H	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	Ö	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725) ~[junit-platform-commons-1.8.1.jar:1.8.1]
-	Ç	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	¨	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	Ö	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ì	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	é	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	≠	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ç	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	≠	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ñ	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ù	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ï	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	Ñ	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	É	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	¶	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ù	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	î	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ì	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	w	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	á	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	H	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	√	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	w	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	á	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	H	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
-	√	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	w	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ú	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ì	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	á	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	¿	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	ü	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	õ	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.1.jar:1.8.1]
-	x	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[na:na]
-	w	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[na:na]
-	Ä	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[na:na]
-	Ü	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[na:na]
-	w	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[na:na]
-	_	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) ~[na:na]
-	_	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75) ~[na:na]
-	æ	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
-	≥	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79) ~[na:na]
-	è	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75) ~[na:na]
-	q	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61) ~[na:na]
-	\	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	n	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	v	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	H	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	b	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
-	b	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
-	r	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
-	Å	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
-	@	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
-	`	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
-	w	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
-	b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
-	a	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
-	s	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
-	ã	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133) ~[na:na]
-	ä	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
-	u	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
-	v	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
-	
-ä2022-08-03 12:27:12.430  INFO 17882 --- [    Test worker] c.r.d.system.service.PublisherService    : Sending message payload to topic:any
-ï2022-08-03 12:27:12.434 ERROR 17882 --- [    Test worker] c.r.d.system.service.PublisherService    : Failure on sending message payload to topic:any
-ä2022-08-03 12:27:12.455  INFO 17882 --- [    Test worker] c.r.d.system.service.PublisherService    : Sending message payload to topic:any
-ï2022-08-03 12:27:12.455  INFO 17882 --- [    Test worker] c.r.d.system.service.PublisherService    : Successful sending message payload to topic:any
