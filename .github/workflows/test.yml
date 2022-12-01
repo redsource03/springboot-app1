@@ -4,7 +4,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    environment: develop
     steps:
      - name: test
        run: |
